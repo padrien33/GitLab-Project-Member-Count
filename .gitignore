@@ -2,8 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
 # text file created by the script
 project_id_members.txt
+.DS_Store
+
 # C extensions
 *.so
 
