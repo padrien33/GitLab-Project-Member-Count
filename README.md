@@ -26,8 +26,9 @@ After setting the environment variable, it will be available for the current ses
 If you do not already have the Python script, you can download it directly from this git repository using the following `curl` command:
 
 ```bash
-
 curl -O https://raw.githubusercontent.com/padrien33/GitLab-Project-Member-Count/main/gitlab_members.py
+
+```
 
 ## Running the script
 To run the script, simply use the following command:
