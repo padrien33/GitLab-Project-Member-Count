@@ -21,6 +21,11 @@ set GITLAB_PRIVATE_TOKEN=your-private-token
 
 After setting the environment variable, it will be available for the current session. If you want to set it permanently, you would need to add the above command to your shell startup file or system environment variables, which is beyond the scope of this README.
 
+## Downloading the script
+
+```bash
+curl --header "PRIVATE-TOKEN: $GITLAB_PRIVATE_TOKEN" -O <url-to-raw-script>
+
 ## Running the script
 To run the script, simply use the following command:
 
