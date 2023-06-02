@@ -12,13 +12,13 @@ Before running this script, you need to set up an environment variable for your 
 The environment variable for the token should be named `GITLAB_PRIVATE_TOKEN`.
 
 ### Setting the environment variable on Unix or Linux
-
+```bash
 export GITLAB_PRIVATE_TOKEN=your-private-token
-
+```
 ### Setting the environment variable on Windows
-
+```bash
 set GITLAB_PRIVATE_TOKEN=your-private-token
-
+```
 After setting the environment variable, it will be available for the current session. If you want to set it permanently, you would need to add the above command to your shell startup file or system environment variables, which is beyond the scope of this README.
 
 ## Downloading the script
@@ -32,9 +32,9 @@ curl -O https://raw.githubusercontent.com/padrien33/GitLab-Project-Member-Count/
 
 ## Running the script
 To run the script, simply use the following command:
-
+```bash
 python3 gitlab_member_count.py
-
+```
 The script will write the number of members for each project and their Git URLs to a text file named `project_id_members.txt`. The file will be saved in the same directory where the script is run.
 
 
