@@ -79,6 +79,6 @@ with open('project_id_members.txt', 'w') as file:
     # Write the current date on the first line
     file.write(f'Date: {datetime.now()}\n')
     for project_id, project_data in project_members.items():
-        file.write(f"Project {project_id} (URL: {project_data['git_url']}): {project_data['member_count']} members\n")
+        file.write(f"Project ID: {project_id} (URL: {project_data['git_url']}): {project_data['member_count']} members\n")
 
 print("Text file created: project_id_members.txt including project IDs, Git URLs, and unique member counts per projects.")
