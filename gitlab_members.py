@@ -54,7 +54,7 @@ unique_user_ids = set()
 # Get members for each project
 for project_data in all_project_data:
     # API endpoint to get the project members
-    members_api_url = f'{url}/api/v4/projects/{project_data["id"]}/members/all'
+    members_api_url = f'{url}/api/v4/projects/{project_data["id"]}/members'
 
     members_response = requests.get(members_api_url, headers=headers)
 
