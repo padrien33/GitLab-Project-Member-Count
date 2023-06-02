@@ -15,10 +15,10 @@ For more details on the attribute you can use, please consult the documentation 
 
 It will then create a text file, project_id_members.txt follwing this format:
 ```bash
-Project 20176*** (URL: https://gitlab.com/***/***/***.git): 2 members
-Project 17858*** (URL: https://gitlab.com/***/***.git): 1 members
-Project 16932*** (URL: https://gitlab.com/***/***.git): 1 members
-Project 15640*** (URL: https://gitlab.com/***/***.git): 3 members
+Project ID: 20176*** (URL: https://gitlab.com/***/***/***.git): 2 members
+Project ID: 17858*** (URL: https://gitlab.com/***/***.git): 1 members
+Project ID: 16932*** (URL: https://gitlab.com/***/***.git): 1 members
+Project ID: 15640*** (URL: https://gitlab.com/***/***.git): 3 members
 
 ```
 
