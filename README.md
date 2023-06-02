@@ -3,6 +3,8 @@
 This Python script retrieves the number of members for each project on a GitLab instance, as well as the total number of unique members across all projects. 
 
 
+
+
 ![Screenshot](https://github.com/padrien33/GitLab-Project-Member-Count/blob/main/gitlab_members.png)
 
 It uses GitLab API, so you can add more filter on the API Call like restricting the repo that contains only Java by using the attribute: "with_programming_language"
@@ -10,6 +12,15 @@ Change "projects_api_url" in gitlab_members.py
 For more details please consult the documentation from GitLab:
 
 [GitLab Project API Doc](https://docs.gitlab.com/ee/api/projects.html#list-all-projects)
+
+It will then create a text file, project_id_members.txt follwing this format:
+```bash
+Project 20176*** (URL: https://gitlab.com/***/***/***.git): 2 members
+Project 17858*** (URL: https://gitlab.com/***/***.git): 1 members
+Project 16932*** (URL: https://gitlab.com/***/***.git): 1 members
+Project 15640*** (URL: https://gitlab.com/***/***.git): 3 members
+
+```
 
 ## Requirements
 - Python 3.6 or above
