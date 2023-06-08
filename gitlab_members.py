@@ -23,7 +23,7 @@ first_success = False
 
 while True:
     # API endpoint to get all projects with Java, Not Archived, and with activities in the last 90 days
-    projects_api_url = f'{url}/api/v4/projects?membership=true&page={page}&per_page={per_page}'
+    projects_api_url = f'{url}/api/v4/projects?with_programming_language=Java&simple=true&archived=false&last_activity_after=2023-04-01T20:59:07.396Z&page={page}&per_page={per_page}'
 
     response = requests.get(projects_api_url, headers=headers)
 
@@ -65,7 +65,7 @@ for project_data in all_project_data:
         # Store number of members for this project
         project_members[project_data["id"]] = {'git_url': project_data['git_url'], 'member_count': len(members)}
     else:
-        print(f'Error for project {project_id} with status code: {members_response.status_code}')
+        print(f'Error for project {project_data["id"]} with status code: {members_response.status_code}')
 
 
 # Print total number of projects
