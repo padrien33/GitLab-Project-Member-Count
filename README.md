@@ -41,6 +41,13 @@ set GITLAB_PRIVATE_TOKEN=your-private-token
 ```
 After setting the environment variable, it will be available for the current session. If you want to set it permanently, you would need to add the above command to your shell startup file or system environment variables, which is beyond the scope of this README.
 
+
+### Setup URL
+
+By default it will use https://gitlab.com as the instance.
+Change the variable url to the hostname f your GitLab instance.
+
+
 ## Downloading the script
 
 If you do not already have the Python script, you can download it directly from this git repository using the following `curl` command:
